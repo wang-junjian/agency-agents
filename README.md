@@ -61,6 +61,18 @@ Browse the agents below and copy/adapt the ones you need!
 ./scripts/install.sh --tool kimi
 ```
 
+### Option 4: Web Showcase (Interactive)
+
+Experience the full agent roster in a modern, interactive web interface with real-time search and markdown previews.
+
+```bash
+# Start the local server from the project root
+python3 -m http.server 8000
+
+# Open in your browser:
+# http://localhost:8000/web-showcase/index.html
+```
+
 See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
 
 ---
