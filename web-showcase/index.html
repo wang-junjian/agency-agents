@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Agency - AI 专家团队名录</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">🎭 THE AGENCY</h1>
+            <p class="tagline">触手可及的完整 AI 代理机构</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="搜索专家、专长或所属部门...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <nav id="category-nav">
+                <h3>所属部门</h3>
+                <ul id="category-list">
+                    <li class="active" data-category="all">全部专家</li>
+                    <!-- 动态加载 -->
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="content">
+            <div id="stats-bar">
+                找到 <span id="agent-count">0</span> 位专家
+            </div>
+            <div id="agent-grid" class="agent-grid">
+                <!-- 动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Agent Details -->
+    <div id="agent-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="copy-button" class="action-button">复制 Markdown</button>
+                <span class="close-button">&times;</span>
+            </div>
+            <div id="modal-body" class="markdown-body">
+                <!-- Data will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
