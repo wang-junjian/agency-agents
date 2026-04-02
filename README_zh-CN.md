@@ -73,7 +73,7 @@ python3 -m http.server 8000
 # http://localhost:8000/web-showcase/index.html
 ```
 
-查看下方的 [多工具集成](#-多工具集成) 部分以获取详细信息。
+![DEMO](/demo.jpeg)
 
 ---
 

@@ -73,7 +73,7 @@ python3 -m http.server 8000
 # http://localhost:8000/web-showcase/index.html
 ```
 
-See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
+![DEMO](/demo.jpeg)
 
 ---
 
